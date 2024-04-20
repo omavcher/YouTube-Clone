@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+      font-style: normal;
+}
+
+.nav {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   text-align: center;  
+   position: fixed;
+   z-index:500;
+}
+
+.sidebar {
+    position: fixed;
+    width: 4rem;
+    height: 100vh;
+    left: 0;
+    top: 3rem;
+     z-index: 10000;
+    transition: 0.5s;
+ 
+}
+.main {
+    width: 100%;
+    height: 100vh;
+   margin-left: 4rem;
+   background-color: red;
+   
+
+}
+
+.nav img {                                                                        /*   The youtube animaction logo */
+    width: 7.625rem;
+    height: 3.5rem;
+
+}
+.nav-start{
+    margin-left: 2rem;
+   display: flex;
+   text-align: center;
+    
+}
+.nav-start i{
+   margin-top: 1rem;
+   color: white;
+    height: 2.5rem;
+    width: 2.5rem; 
+    
+}
+
+.nav-start i:hover{
+    opacity: 1;
+     font-size: 1.1rem;
+}
+
+
+.search-box{
+    width: 32.475rem ;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+
+}
+
+.search-place{
+    width: 28.175rem;
+    height: 2.3rem;
+    background-color: rgba(255, 255, 255, 0.041);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-width: 0px;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    text-indent: 10px;
+}
+
+.search-btn{
+    
+    height: 2.3rem;
+    width: 3rem;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: white;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+    
+}
+
+.search-mic{
+    height: 2.3rem;
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    color: white;
+    border-radius: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.234);
+    border-left-width: 0.1px ;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.search-mic:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.nav-button{
+    width: 14.063rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.nav-button button{
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-width: 0;
+    border-radius: 2rem;
+}
+
+.nav-button i {
+    font-size: 1.1rem;
+}
+
+.nav-button button:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.profile{
+    border-radius: 2rem;
+    margin-right: 2rem;
+}
+
+
+.sidebar-card{
+    color: white;
+    height: 4.625rem;
+    width: 3.8rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+}
+
+.sidebar-card:hover{
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+.sidebar-card a{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-card i{
+    background-color: transparent;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.sidebar-card p{
+    font-size: 0.6rem;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+.sidebar-card img{
+    margin-top: 0.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 530px) {
+    
+.nav{
+   width: 20px;
+}
+.nav-button{
+    display: none;
+}
+
+.search-box{
+     margin-left: 2rem;
+     
+}
+}
+
+
+.short-row {
+    width: 100%;
+    height: 42rem;
+    display: flex;
+}
+
+.short-row1{
+    padding-top: 3.5rem;
+}
+
+
+.short{
+    margin-left: 10rem;
+    height: 100%;
+    width:  22rem;
+
+}
+
+.short img{
+    height: 100%;
+    width:  22rem;
+    border-radius: 1.5rem;
+}
+
+
+.short-row button{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.194);
+    border-radius: 50%;
+    border-width: 0;
+    opacity: 0.7;
+}
+
+.short-row button:hover{
+    opacity: 1;
+}
+
+.short-row button i{
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#down-btn{
+    margin-top: 25rem;
+}
+
+.up-down-btn{
+    margin-top: 2.5rem;
+    margin-left: 4%;
+    height: 32rem;
+    width: 3.5rem;
+    display: inline-block;
+    justify-content:space-between;
+}
+
+
+.short-info{
+    margin-top: 18.6rem;
+    margin-left: 1.5rem;
+    width:  28rem;
+    height: 50%;
+    border-radius: 2rem;
+    background-color: #7373734d;
+   
+}
+
+
+.short-info-username{
+    background-color: transparent;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+height: 3rem;
+width: 16rem;
+display: flex;
+}
+
+.short-info-title{
+background-color: transparent;
+height: 6rem;
+margin-top: 0.5rem;
+}
+
+.short-info-buttons{
+    margin-top: 1rem;
+    display: flex;
+    background-color: transparent;
+   height: 5rem;
+}
+
+
+.short-info-username img{
+    margin-left: 1rem;
+  border-radius: 2rem;  
+}
+
+
+.short-info-username p{
+    margin-left: 0.8rem;
+    margin-top: 0.7rem;
+    color: white;
+    font-weight: bolder;
+    background-color: transparent;
+
+}
+
+.short-info-username button{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    background-color: aliceblue;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.short-info-username button:hover{
+    opacity: 0.9;
+}
+
+.short-info-title h4{
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.short-info-buttons button{
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+.short-info-buttons button:hover{
+    opacity: 1;
+
+}
+
+.short-info-buttons img{
+    margin-top: 1rem;
+}
+
+.short-info-buttons-text{
+    height: 6rem; 
+    width: 5rem; 
+    background-color: transparent; 
+    color: white;
+    margin-left: 0.6rem;
+    text-align: center;
+}
+
+.short-info-buttons-text p{
+    background-color: transparent;
+    margin-top: 0.5rem;
+    font-weight: 600;
+
+}
+
+
+@media screen and (max-width: 977px){
+    .up-down-btn{
+     display: none;
+    }
+    .short-row{
+        display: block;
+    }
+
+
+.short-info{
+    background-color: transparent;
+margin-left: 9rem;
+margin-top: -10rem;
+width:  24rem;
+}
+
+.short-info-buttons{
+    display: none;
+}
+
+.short-info-title h4{
+    font-size: 1rem;
+    margin-left: 2.4rem;
+}
+
+.sidebar{
+    margin-left: -50rem;
+}
+
+
+
+
+
+
+
+
+
+}
+
